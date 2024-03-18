@@ -1,13 +1,10 @@
-from collections import Counter
-
-#這邊改為輸入
-input_string = "krasjfiopjfpoieawj"
-
-# 呼叫函式
-frequency = Counter(input_string)
-
-# 透過字典方法排序（A-Z,a-z)
-sorted_frequency = dict(sorted(frequency.items()))
-
-# 輸出
-output = ', '.join(f"{char}:{count}" for char, count in sorted_frequency.items())
+def a (string):
+    b = {}
+    for char in string:
+        b[char] = b.get(char,0)+ 1 
+    return b 
+        
+        
+string = input()
+a = a(string)
+print (a)
